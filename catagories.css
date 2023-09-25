@@ -1,0 +1,62 @@
+/* Custom CSS styles for your page */
+
+/* Background color for the entire page */
+body {
+    background-color: #f7f7f7;
+}
+
+/* Navbar background color */
+.navbar {
+    background-color: #3498db !important;
+}
+
+/* Toggler icon color */
+.navbar-light .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Jumbotron background color */
+.jumbotron {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+/* Background color for the container */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Primary button color */
+.btn-primary {
+    background-color: #e74c3c !important;
+    border-color: #e74c3c !important;
+}
+
+/* Primary button color on hover */
+.btn-primary:hover {
+    background-color: #c0392b !important;
+}
+
+/* Background color for the table */
+.table {
+    background-color: #fff;
+}
+
+/* Table header background color */
+.thead-light th {
+    background-color: #3498db !important;
+    color: #fff;
+}
+
+/* Danger button color */
+.btn-danger {
+    background-color: #e74c3c !important;
+}
+
+/* Warning button color */
+.btn-warning {
+    background-color: #f39c12 !important;
+}

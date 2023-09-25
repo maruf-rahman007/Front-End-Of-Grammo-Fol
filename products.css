@@ -1,0 +1,61 @@
+/* Navbar */
+.navbar {
+    background-color: #007bff; /* Aesthetic blue color for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2)); /* Add a subtle drop shadow to the logo */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White color for the toggle icon */
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Dark gray color for the nav links */
+}
+
+/* Container */
+.container-fluid {
+    background-color: #f7f7f7; /* Light gray background color for the container */
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+/* Add Product Button */
+.btn-primary {
+    background-color: #007bff; /* Aesthetic blue color for buttons */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Table Styling */
+.table {
+    background-color: #fff; /* White background for the table */
+}
+
+/* Table Header */
+.table thead th {
+    background-color: #007bff; /* Blue background for table headers */
+    color: #fff; /* White text color for table headers */
+}
+
+/* Table Rows */
+.table tbody tr:hover {
+    background-color: #f0f0f0; /* Light gray background on row hover */
+}
+
+/* Delete and Update Buttons */
+.btn-danger, .btn-warning {
+    color: #fff; /* White text color for buttons */
+}
+
+.btn-danger:hover, .btn-warning:hover {
+    filter: brightness(90%); /* Slight darkening on button hover */
+}

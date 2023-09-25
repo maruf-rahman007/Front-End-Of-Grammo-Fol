@@ -1,0 +1,75 @@
+/* Styles for the middle part */
+.middle-content {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Welcome message with animation */
+.middle-content h2 {
+    font-size: 28px;
+    color: #007bff; /* Aesthetic blue color */
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-in-out; /* Slide-in animation for the welcome message */
+}
+
+/* Keyframes for the slide-in animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Product cards */
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 6px;
+}
+
+.product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #007bff; /* Aesthetic blue color */
+}
+
+/* Add to cart button */
+.product button {
+    background-color: #007bff; /* Aesthetic blue color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

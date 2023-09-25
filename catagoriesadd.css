@@ -1,0 +1,42 @@
+/* Custom CSS styles for your page */
+
+/* Background color for the entire page */
+body {
+    background-color: #f7f7f7;
+}
+
+/* Navbar background color */
+.navbar {
+    background-color: #3498db !important;
+}
+
+/* Toggler icon color */
+.navbar-light .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Background color for the container */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form input field background color */
+.form-control {
+    background-color: #ecf0f1;
+    color: #333;
+    border: 1px solid #bdc3c7;
+}
+
+/* Primary button color */
+.btn-primary {
+    background-color: #e74c3c !important;
+    border-color: #e74c3c !important;
+}
+
+/* Primary button color on hover */
+.btn-primary:hover {
+    background-color: #c0392b !important;
+}

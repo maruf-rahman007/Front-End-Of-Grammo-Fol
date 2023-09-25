@@ -1,0 +1,86 @@
+/* Custom CSS styles for your page */
+
+/* Background color for the entire page */
+body {
+    background-color: #f7f7f7;
+}
+
+/* Navbar background color */
+.navbar {
+    background-color: #3498db !important;
+}
+
+/* Toggler icon color */
+.navbar-light .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Background color for the container */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form input field background color */
+.form-control {
+    background-color: #ecf0f1;
+    color: #333;
+    border: 1px solid #bdc3c7;
+}
+
+/* Primary button color */
+.btn-primary {
+    background-color: #e74c3c !important;
+    border-color: #e74c3c !important;
+}
+
+/* Primary button color on hover */
+.btn-primary:hover {
+    background-color: #c0392b !important;
+}
+
+/* Country select box */
+.select-outline {
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ecf0f1;
+}
+
+/* Additional information textarea */
+.md-textarea {
+    background-color: #ecf0f1;
+    color: #333;
+    border: 1px solid #bdc3c7;
+}
+
+/* Payment button */
+.btn-pay {
+    background-color: #27ae60 !important;
+    border-color: #27ae60 !important;
+}
+
+/* Payment button on hover */
+.btn-pay:hover {
+    background-color: #219852 !important;
+}
+
+/* Discount code input */
+#discount-code {
+    background-color: #ecf0f1;
+    color: #333;
+    border: 1px solid #bdc3c7;
+}
+
+/* Add to cart button */
+.btn-cart {
+    background-color: #f39c12 !important;
+    border-color: #f39c12 !important;
+}
+
+/* Add to cart button on hover */
+.btn-cart:hover {
+    background-color: #d78e11 !important;
+}

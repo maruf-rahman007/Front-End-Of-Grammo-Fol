@@ -1,0 +1,64 @@
+/* Navbar */
+.navbar {
+    background-color: #007bff; /* Aesthetic blue color for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2)); /* Add a subtle drop shadow to the logo */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White color for the toggle icon */
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Dark gray color for the nav links */
+}
+
+/* Container */
+.container {
+    background-color: #f7f7f7; /* Light gray background color for the container */
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+/* Product Image */
+img.product-image {
+    max-height: 300px;
+    max-width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow to the product image */
+}
+
+/* Product Details */
+h2.product-name {
+    color: #333; /* Dark gray color for the product name */
+}
+
+p.product-category {
+    color: #777; /* Light gray color for the category name */
+}
+
+h2.product-price {
+    color: #007bff; /* Aesthetic blue color for the product price */
+}
+
+h5.product-weight {
+    color: #555; /* Gray color for the weight */
+}
+
+p.product-description {
+    color: #333; /* Dark gray color for the product description */
+}
+
+/* Add to Cart Button */
+.btn-primary {
+    background-color: #007bff; /* Aesthetic blue color for buttons */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}

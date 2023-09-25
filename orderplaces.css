@@ -1,0 +1,60 @@
+/* Navbar */
+.navbar {
+    background-color: #007bff; /* Aesthetic blue color for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2)); /* Add a subtle drop shadow to the logo */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White color for the toggle icon */
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; /* White color for the nav links */
+}
+
+/* Container */
+.container {
+    background-color: #f7f7f7; /* Light gray background color for the container */
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+/* Receipt */
+.well {
+    background-color: #fff; /* White background for the receipt */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.well h1 {
+    color: #007bff; /* Aesthetic blue color for the receipt title */
+}
+
+/* Table */
+.table {
+    background-color: #fff; /* White background for the table */
+}
+
+.table th {
+    background-color: #007bff; /* Aesthetic blue color for table headers */
+    color: #fff;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+}
+
+/* Result */
+strong {
+    color: #007bff; /* Aesthetic blue color for the result text */
+    font-weight: bold;
+}

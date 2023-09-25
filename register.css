@@ -1,0 +1,55 @@
+/* Navbar */
+.navbar {
+    background-color: #007bff; /* Aesthetic blue color for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2)); /* Add a subtle drop shadow to the logo */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White color for the toggle icon */
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Dark gray color for the nav links */
+}
+
+/* Container */
+.container {
+    background-color: #f7f7f7; /* Light gray background color for the container */
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.container h3 {
+    color: #333; /* Dark gray color for section titles */
+}
+
+/* Form */
+.form-control {
+    border: 1px solid #ddd; /* Light gray border for form controls */
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #007bff; /* Aesthetic blue color for the submit button */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Optional: Add hover effect to links */
+.linkControl {
+    color: #007bff; /* Aesthetic blue color for links */
+    text-decoration: none;
+}
+
+.linkControl:hover {
+    text-decoration: underline; /* Underline links on hover */
+}

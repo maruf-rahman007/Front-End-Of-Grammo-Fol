@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammo Fol</title>
+    <!-- Include your existing CSS links here -->
+    <link rel="stylesheet" href="your-existing-styles.css">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Include the new CSS file you want to create -->
+    <link rel="stylesheet" href="indox.css">
+    <link rel="icon" href="logo.png" type="image/icon type">
+</head>
+<body>
+    <!-- Your existing navigation bar here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img th:src="@{/images/icon1.png}"  src="../static/images/logo.png" width="auto" height="40" class="d-inline-block align-top" alt=""/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" th:href="@{/}" href="#">home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" th:href="@{/shop}" href="#">shop</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">login</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">logout</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" th:href="@{/cart}" href="#">cart</a>
+                    </li>
+                    <li class="nav-item active">
+                        <span class="nav-link" th:text="${cartCount}">0</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content section -->
+    <div class="middle-content">
+        <!-- This is the section where you can add new content or styles -->
+        <h2>Welcome to Our Grammo Fol</h2>
+        <p>Discover the finest Bangladeshi seasonal fruits:</p>
+
+        <!-- Sample product cards (you can add more) -->
+        <div class="product">
+            <img src="mango.jpg" alt="Product 1">
+            <div class="product-title">Mango</div>
+            <div class="product-price">আম</div>
+            ম্যাঙ্গো, যা প্রশান্ত প্রদেশে আম বলা হয়, একটি সুস্বাদু ও পুষ্টিকর ফল। এই ফলটি বর্ষকালে আসে এবং সেই সময়টিতে এই ফলের স্বাদ অত্যন্ত স্বাদু ও রুচিকর। ম্যাঙ্গো বাঙালি জনগণের জনপ্রিয় ফলের মধ্যে একটি এবং এটির বেশ কিছু প্রকারের ভাঁড় পাওয়া যায়। আমের মধ্যে একটি মহৎ প্রকার হলো "লংডা" আম, যা আমাদের বৃষ্টির ঋতুতে প্রধানত উত্তর বাংলাদেশে পাওয়া যায়।
+                
+                ম্যাঙ্গো ফলের মধ্যে সেরা স্বাদের একটি প্রকার হলো "আম্রপালি" আম, যা সেই সুস্বাদু ও জুসি ভাবে জানা হয়। এই আমের আরও কিছু প্রকার হলো "ফজলু", "লাঙডা", এবং "লাংরা" আম, যা সমৃদ্ধ স্বাদের হয়ে থাকে।
+                
+                ম্যাঙ্গো একটি পুষ্টিকর ফল হিসেবে পরিচিত, এবং এটি বিভিন্ন সংকরণে খাওয়া যায়, যেমন ফল খাবার, ম্যাঙ্গো আইসক্রিম, ম্যাঙ্গো চাটনি, এবং ম্যাঙ্গো ল্যাসি।
+                
+                বাংলাদেশে ম্যাঙ্গো একটি প্রধান আগ্রহণ ফল হিসেবে পরিচিত, এবং এই ফলটি বাংলাদেশের সমৃদ্ধ ফলের একটি উদাহরণ। এটি গরম ঋতুতে সবচেয়ে সুস্বাদু ও প্রিয় ফলের মধ্যে একটি এবং সম্পুর্ণ দেশের মানুষের মধ্যে বিশেষ গুরুত্বপূর্ণ হয়।</button>
+
+        <div class="product">
+            <img src="lychee.jpg" alt="Product 2">
+            <div class="product-title">Lychees</div>
+            <div class="product-price">লিচু</div>
+            লিচু, এটি একটি মিষ্টি ও স্বাদু ফল, যা প্রধানত গরম দেশেগুলিতে উত্পন্ন হয়। এই ফলটি প্রধানত গুজরাত, মহারাষ্ট্র, বাংলাদেশ, থাইল্যান্ড, ইনডোনেশিয়া, ফিলিপাইন, চীন, ব্রাজিল, ও মেক্সিকো সহ অনেক দেশে উত্পন্ন হয়।
+
+লিচু একটি ছোট গোল ফল, যা আকারে আমের মত, কিন্তু তা সবচেয়ে বেশী আকারে আমের মত ফজলুতে সাধারণ। এই ফলটি প্রধানত গুজরাত, মহারাষ্ট্র, বাংলাদেশ, থাইল্যান্ড, ইনডোনেশিয়া, ফিলিপাইন, চীন, ব্রাজিল, ও মেক্সিকো সহ অনেক দেশে উত্পন্ন হয়।
+
+লিচু মুখে নেওয়া সময় এটি সবচেয়ে স্বাদু এবং মধুর আরওমেয়ে হয়, এবং এটি ঠান্ডা থাকার সময় মুখে আনন্দ তৈরি করে। লিচু বিভিন্ন সংকরণে খাওয়া যায়, যেমন ফল খাবার, লিচু শেক, লিচু চাটনি, এবং লিচু জেলি।
+
+লিচু মুখে নেওয়া সময় এটি সবচেয়ে স্বাদু এবং মধুর আরওমেয়ে হয়, এবং এটি ঠান্ডা থাকার সময় মুখে আনন্দ তৈরি করে। লিচু বিভিন্ন সংকরণে খাওয়া যায়, যেমন ফল খাবার, লিচু শেক, লিচু চাটনি, এবং লিচু জেলি।
+        </div>
+
+        <div class="product">
+            <img src="pineapple.jpg" alt="Product 3">
+            <div class="product-title">Pineapples</div>
+            <div class="product-price">আনারস</div>
+            আনারস বা পাইনআপল বৃক্ষের ফল একটি স্বাদু ও রুচিশীল ফল। এটি একটি বড় গাছে উত্পন্ন হয় এবং এটি পৃথিবীর বিভিন্ন অংশে চড়মিষ্যাদি বন্যজন্তুদের দ্বারা খুব পছন্দ করা হয়। আনারস একটি বৃহৎ, মেদের এবং সাদা রঙের ফল, যা স্বাদে মিষ্টি এবং রসপূর্ণ থাকে। এটি সবচেয়ে বেশীকারী খাবারের একটি উপাদান হওয়ার সাথে, আনারসে কিছু চিকিৎসাসহক গুণও থাকে। এটি সাধারণভাবে তাজা খাবার, জুস, চাটনি, মিল্কশেক, ফ্রোজেন ডেসার্ট, স্যুপ, চকলেট, চিপস, জেলি, পাই, ব্রেড, কেক, পিজা, পাস্তা, চকলেট বার, বিস্কুট, চকলেট চিপ কুকিজ, চকলেট কেক, আইসক্রিম, সোডা, চকলেট মিল্কশেক, ফল চিনি, প্যানকেক, পুডিং, স্যান্ডউইচ, চকলেট সিরো, আইসক্রিম স্যান্ডউইচ, চকলেট স্যালাড, পাইনআপল পারফেট, বোল্ড এবং আইসক্রিম সুন্ডে। আনারস ফলটি সুস্বাদু, পুষ্টিকর এবং ব্যাক্তিগত স্বাস্থ্যে একটি অত্যন্ত ভাল ফল।
+        </div>
+    </div>
+
+    <!-- Your existing footer/footer content here -->
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+    <!-- Include Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

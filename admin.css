@@ -1,0 +1,60 @@
+/* Apply styles to the body */
+body {
+    background-color: #f2f2f2; /* Light gray background */
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #2196F3; /* Blue background color */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Style the navbar links */
+.navbar-nav .nav-link {
+    color: white; /* White text color for links */
+}
+
+/* Style the jumbotron */
+.jumbotron {
+    background-color: #2196F3; /* Blue background color */
+    font-size: 2.5rem; /* Larger font size */
+    color: white; /* White text color */
+    padding: 20px; /* Add spacing around the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow */
+}
+
+/* Style the cards */
+.card {
+    background-color: white; /* White background color */
+    padding: 20px; /* Add padding to the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Rounded corners for cards */
+}
+
+/* Style card titles and paragraphs */
+.card-title,
+.card-text {
+    margin-bottom: 10px; /* Add spacing between elements */
+}
+
+/* Style buttons */
+.btn-primary {
+    background-color: #FF5733; /* Coral background color for primary button */
+    color: white; /* White text color for primary button */
+    border: none; /* Remove button border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: background-color 0.3s ease; /* Smooth transition for button color */
+}
+
+/* Hover effect for buttons */
+.btn-primary:hover {
+    background-color: #FF7043; /* Lighter coral color on hover */
+}
+
+/* Add a subtle border around buttons */
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 87, 51, 0.4);
+}

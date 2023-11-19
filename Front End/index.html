@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammo-Fol</title>
+    <link href="../static/css/index.css" th:href="@{/css/index.css}" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="icon" href="../static/images/logo.png" type="image/icon type">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../static/images/logo.png" width="80px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li>
+                            <a class="nav-link" th:href="@{/}" href="#">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" th:href="@{/shop}" href="#">Products</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Login</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Logout</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" th:href="@{/cart}" href="#"><img src="../static/images/cart.png" width="30px" height="25px"></a>
+                        </li>
+                        <li class="nav-item active">
+                            <span class="nav-link" th:text="${cartCount}">0</span>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <img src="../static/images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Try All The Fresh Food<br>of Bangladesh!</h1>
+                    <p>Welcome to our Bangladeshi<br>fruit haven! From the<br>luscious sweetness of mangoes<br>to exotic
+                        lychees,savor the<br>finest fruits delivered to your doorstep.</p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="../static/images/image11.png - Copy.png " alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------------------------------------------------------------------------------------------------->
+
+<div class="catagories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="../static/images/product-1.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="../static/images/product-2.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="../static/images/product-4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------->
+
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="../static/images/product-1.jpg">
+            <h4>Watermelon</h4>
+            <P>৳150.00</P>
+        </div>
+        <div class="col-4">
+            <img src="../static/images/lychee.jpg">
+            <h4>Lychee</h4>
+            <P>৳350.00</P>
+        </div>
+        <div class="col-4">
+            <img src="../static/images/product-3.jpg">
+            <h4>Guava</h4>
+            <P>৳50.00</P>
+        </div>
+        <div class="col-4">
+            <img src="../static/images/product-4.jpg">
+            <h4>Pineapple</h4>
+            <P>৳80.00</P>
+        </div>
+    </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="../static/images/image11.png.jpg">
+            <h4>Papaya</h4>
+            <P>৳50.00</P>
+        </div>
+        <div class="col-4">
+            <img src="../static/images/product-2.jpg">
+            <h4>Strawberry</h4>
+            <P>৳400.00</P>
+        </div>
+        <div class="col-4">
+            <img src="../static/images/product-5.jpg">
+            <h4>Rambutan</h4>
+            <P>৳50.00</P>
+        </div>
+        <div class="col-4">
+            <img src="../static/images/product-6.jpeg">
+            <h4>Pitaya</h4>
+            <P>৳180.00</P>
+        </div>
+        <div class="col-4">
+            <img src="../static/images/product-1.jpg">
+            <h4>Watermelon</h4>
+            <P>৳150.00</P>
+        </div>
+        <div class="col-4">
+            <img src="../static/images/lychee.jpg">
+            <h4>Lychee</h4>
+            <P>৳350.00</P>
+        </div>
+        <div class="col-4">
+            <img src="../static/images/product-7.jpg">
+            <h4>Avocado</h4>
+            <P>৳50.00</P>
+        </div>
+        <div class="col-4">
+            <img src="../static/images/product-8.jpg">
+            <h4>Elephant Apple</h4>
+            <P>৳180.00</P>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------->
+
+
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="../static/images/image11.png.jpg" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on GrammoFol</p>
+                <h1>Papaya</h1>
+                <small>Papaya, tropical fruit rich in vitamins, enzymes, and antioxidants. Sweet and vibrant, it promotes digestion and boosts immune health.</small>
+                <a href="" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------->
+
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>I recently discovered this fantastic Bangladeshi fruit ecommerce platform, and I'm hooked! The variety of fresh fruits they offer is simply incredible. From juicy mangoes to ripe guavas, every piece is a burst of flavor.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <img src="../static/images/person-1.jpg" alt="">
+                <h3>Sarbajit Paul Bappy</h3>
+            </div>
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>The ordering process is a breeze, and the fruits are delivered right to my doorstep in perfect condition. The attention to quality is evident, and I appreciate the effort they put into ensuring that each fruit is at its peak freshness.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <img src="../static/images/person-2.png" alt="">
+                <h3>Maruf Rahman</h3>
+            </div>
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>Not only are the fruits top-notch, but the customer service is also exceptional. Any questions or concerns I had were promptly addressed, making the overall shopping experience delightful.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <img src="../static/images/person-4.jpg" alt="">
+                <h3>Rittik Chandra Das Turjy</h3>
+            </div>
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>I highly recommend this platform to fellow fruit enthusiasts. It's a convenient way to enjoy the best of Bangladeshi fruits without leaving the comfort of your home. Happy shopping!</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <img src="../static/images/person-3.jpg" alt="">
+                <h3>Most. Jannatul Firdousi Zoti</h3>
+            </div>
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>I highly recommend this platform to fellow fruit enthusiasts. It's a convenient way to enjoy the best of Bangladeshi fruits without leaving the comfort of your home. Happy shopping!</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <img src="../static/images/person-3.jpg" alt="">
+                <h3>Most. Jannatul Firdousi Zoti</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download Our App for Andoid and IOS Both</p>
+                <div class="app-logo">
+                    <img src="../static/images/play-store.png">
+                    <img src="../static/images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="../static/images/logo.png" alt="">
+                <p>Our Purpose is to make a sustainable change in the fruit market in Bangladesh for both consumer and seller</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Posts</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Linkedin</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copywright">Copyright 2023 - Grammo-Fol</p>
+    </div>
+</div>
+
+
+<!-- toggle -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</body>
+
+</html>
